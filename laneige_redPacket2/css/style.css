@@ -1,0 +1,449 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,textarea,p,blockquote,th,td,a{padding:0;margin:0;color: rgba(0,0,0,0.8);text-decoration:none;cursor:pointer;}
+*{font:24px/150% 'SimSun','Helvetica Neue', Helvetica, STHeiTi, sans-serif;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent;color:rgba(0,0,0,0.8);padding: 0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border: 0;}
+address,caption,cite,code,dfn,em,th,var{font-weight:normal;font-style:normal;}
+article, aside, footer, header, hgroup, nav, section, figure, figcaption { display: block;}
+ol,ul{list-style:none outside none;}
+caption{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+a{outline:none;}
+/* *,*:before,*:after{box-sizing:border-box;-webkit-box-sizing:border-box;} */
+img{vertical-align:top;}
+a, img ,p{-webkit-touch-callout:none;}
+.clearfix:after {content:"";display:block;height: 0;line-height: 0;visibility:hidden; clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+html,body{height:1040px;}
+
+::-webkit-input-placeholder {
+	color:#646464; 
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input{-webkit-appearance:none; resize: none;outline:none ; border: none;-webkit-appearance: none !important;margin: 0;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{	-webkit-appearance: none !important;	margin: 0;}
+.box{width:640px;height: 100%;margin:0 auto;position:relative; overflow: hidden;}
+section{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;visibility: hidden;}
+.center{position: absolute;top: 50%;left: 50%;transform:translate3d(-50%,-50%,0);-webkit-transform:translate3d(-50%,-50%,0);}
+.absZero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* background: url(../images/gold.png) no-repeat */
+}
+@keyframes shake{
+    0%, 100% {-webkit-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}  
+}
+@-moz-keyframes shake{
+    0%, 100% {-webkit-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}  
+}
+@-o-keyframes shake{
+    0%, 100% {-webkit-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+}
+@-webkit-keyframes shake{
+    0%, 100% {-webkit-transform: translateX(0);}  
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}  
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);} 
+}
+@keyframes light2 {
+  0% {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -moz-transform: scale(1.2, 1.2);
+    /* Firefox */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.2, 1.2);
+    /* Opera */
+  }
+  to {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+}
+
+@-moz-keyframes light2 /* Firefox */ {
+  0% {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -moz-transform: scale(1.2, 1.2);
+    /* Firefox */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.2, 1.2);
+    /* Opera */
+  }
+  to {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+}
+
+@-webkit-keyframes light2 /* Safari 和 Chrome */ {
+  0% {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -moz-transform: scale(1.2, 1.2);
+    /* Firefox */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.2, 1.2);
+    /* Opera */
+  }
+  to {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+}
+
+@-o-keyframes light2 /* Opera */ {
+  0% {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -moz-transform: scale(1.2, 1.2);
+    /* Firefox */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.2, 1.2);
+    /* Opera */
+  }
+  to {
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -moz-transform: scale(1, 1);
+    /* Firefox */
+    -webkit-transform: scale(1, 1);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1, 1);
+    /* Opera */
+  }
+}
+#s1{
+background: url(../images/1-bg.jpg) no-repeat;
+}
+#s2{
+background: url(../images/2-bg.jpg) no-repeat;
+}
+ #share{
+  /* background-color: rgba(188,2,31,0.8); */
+  background: url(../images/s/share/share_00029.png) no-repeat;
+}
+/**********
+    s1
+**********/
+#s1 .words{
+    top:60%;
+    text-align: center;
+}
+#s1 .wordstop{
+    top:19%
+}
+#s1 .words .phoneshake{
+  animation: shake 2s linear 1s 2;
+  -moz-animation: shake 2s linear 1s 2;
+  /* Firefox */
+  -webkit-animation: shake 2s linear 1s 2;
+  /* Safari 和 Chrome */
+  -o-animation: shake 2s linear 1s 2;
+  /* Opera */
+}
+#s1 .words p{
+    color: #d4cba7;
+    
+}
+#s1 .active {
+    height: 40%;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+}
+#s1 .active .btn {
+    position: absolute;
+    display: block;
+    left: 36%;
+    height: 51px;
+    width: 181px;
+    bottom: 60px;
+}
+
+/**********
+    s2
+**********/
+#s2 .cardbg{
+  background: url(../images/shadow1.png) no-repeat;
+  display: none;
+}
+#s2 .card {
+  top: 45%;
+  left: 49%;
+}
+#s2 .card .check{
+    height: 260px;
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 80%;
+    z-index: 6;
+}
+#s2 .card .icon{
+  position: absolute;
+  top: 86.5%;
+  left: 94%;
+  animation: light2 0.8s linear infinite;
+  -moz-animation: light2 0.8s linear infinite;
+  /* Firefox */
+  -webkit-animation: light2 0.8s linear infinite;
+  /* Safari 和 Chrome */
+  -o-animation: light2 0.8s linear infinite;
+  /* Opera */
+}
+#s2 .card .state{
+  position: absolute;
+  top: 26%;
+  left: 87%;
+  
+}
+#s2 .card .pos{
+  height: 142px;
+  width: 22px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#s2 .youku{
+   top: 47%;
+   left: 51%;
+   display: none;
+   text-align: center;
+}
+#s2 .youku .savewords{
+    
+}
+#s2 .youku .con{
+   /* height: 317px;
+   width: 500px; */
+}
+#s2 .youku .info{
+    position: absolute;
+    width: 100%;
+    top:41%;
+    
+}
+#s2 .youku .info p,span{
+    font-size: 20px;
+    color: #efc991;
+}
+#s2 .bigRed{
+    width: 495px;
+    height: 512px;
+    display: none;
+}
+#s2 .bigRed .icon{
+    position: absolute;
+    top:44%;
+    left: 60%
+}
+#s2 .bigRed .redpacget{
+    position: absolute;
+    top: 37.5%;
+    height: 50px;
+    width: 142px;
+    left: 40%;
+}
+#s2 .action{
+    width: 460px;
+    top:87%;
+    height: 120px;
+}
+#s2 .redpacget p{
+    color: #efc991;
+    width: 100%;
+    text-align:center
+}
+#s2 .action .again{
+    width: 200px;
+    height: 55px;
+}
+#s2 .action .share_btn{
+    width: 200px;
+    height: 55px;
+}
+#s2 .action .rule{
+    width: 150px;
+    height: 55px;
+    margin: 10px auto 0;
+}
+.rule_box {
+    position: absolute;
+    top: 170px;
+    height: 775px;
+    width: 559px;
+    left: 40px;
+    z-index: 5;
+    display: none;
+    background: url(../images/rule_album.png) no-repeat;
+}
+.rule_box .close_btn {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    width: 50px;
+    height: 50px;
+}
+.rule_box .content {
+    width: 480px;
+    height: 604px;
+    position: absolute;
+    left: 42px;
+    top: 121px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+.rule_box .content::-webkit-scrollbar  
+{  
+    width: 3px;  
+    height: 12px;  
+    border-radius: 10px;
+}  
+/*定义滚动条轨道 内阴影+圆角*/  
+.rule_box .content::-webkit-scrollbar-track  
+{  
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);   */
+    border-radius: 10px;  
+    background-color:#ceb5a0;  
+}  
+/*定义滑块 内阴影+圆角*/  
+.rule_box .content::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #4d2d14;  
+}  
+
+/**********
+    适配x
+**********/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    html,body{height:1290px;}
+    canvas{height: 1290px;width: 640px}
+    #s1{
+      background: url(../images/1-bg-x.png) no-repeat;
+      background-color: #db142d;
+    }
+    #s2{
+      background: url(../images/2-bg-x.jpg) no-repeat;
+    }
+    #s2 .card{
+      top:36%;
+    }
+    #s2 .action{
+      top:70%;
+    }
+    #share{
+      background: url(../images/X/share/share－1290_00029.png) no-repeat;
+    }
+    #s1 .words{
+    top:48%;
+   }
+} 
+#img_canvas {
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+.canvas-container{
+    display: none;
+}

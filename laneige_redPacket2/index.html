@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>兰芝</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/TweenMax.min.js"></script>
+		<!-- <script type="text/javascript" src="js/vconsole.min.js"></script> -->
+		<script src="js/createjs.min.js"></script>
+		<script type="text/javascript">
+			var ImgPath = "images";
+			var radoms = parseInt(Math.floor(Math.random() * 10))
+			var prize_id = 3
+			var allget=false //false是没领完
+			var youkuEnd = false
+			var redPackEnd = false
+			var card1end= false
+			var card2end = false
+		</script>
+		<script>!(function (a, b, c, d, e, f) {
+				var g = "", h = a.sessionStorage, i = "__admaster_ta_param__", j = "tmDataLayer" !== d ? "&dl=" + d : "";
+				if (a[f] = {}, a[d] = a[d] || [], a[d].push({ startTime: +new Date, event: "tm.js" }), h) {
+					var k = a.location.search,
+					l = new RegExp("[?&]" + i + "=(.*?)(&|#|$)").exec(k) || []; l[1] && h.setItem(i, l[1]), l = h.getItem(i),
+						l && (g = "&p=" + l + "&t=" + +new Date)
+				} var m = b.createElement(c), n = b.getElementsByTagName(c)[0]; m.src = "//tag.cdnmaster.cn/tmjs/tm.js?id=" + e + j + g,
+					m.async = !0, n.parentNode.insertBefore(m, n)
+			})(window, document, "script", "tmDataLayer", "TM-277938", "admaster_tm");
+		</script>
+	</head>
+	<body onload="preload()">
+	<!-- <body> -->
+		<div class="box">
+			<div class="music" id="music-btn">
+				<!-- <audio src="images/audio/bgmusic.mp3" id="audio" loop="loop" autoplay="autoplay"></audio> -->
+			</div>
+			<!-- s1部分 -->
+			<section class="screen" id="s1">
+				<div class="wordstop center"><img src="images/s1title.png" alt="" width="" class=""></div>
+				<canvas id="s1_canavs" width="640" height="1040"></canvas>
+			  <div class="words center"><div class="phoneshake"><img src="images/phone.png" alt="" width="67px" class="phone"></div><img src="images/shakewz.png" alt="" width="" class=""></div>
+			</section>
+			<!-- s1部分 -->
+			<!-- s2部分 -->
+			<section class="screen" id="s2">
+				<canvas id="s2_canavs" width="640" height="1040"></canvas>
+				<div class="cardbg absZero">
+					<div class="cardbg2 absZero">
+						<div class="card center">
+							<img src="" alt="" class="replace">
+							<img src="images/icon.png" alt="" class="icon">
+							<div class="check"></div>
+							<div class="state"><div class="pos"> <img src="images/shouxia.png" alt="" class="shouxia"></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="youku center">
+					<div class="con" style=" text-align: center;" id="">
+						<canvas id="youkucard" width="500" height="317" style="z-index: 2;">
+					</div>
+					<img src="" alt="" class="creatimg">
+					<div class="tips"><img src="images/savewords.png" alt="" class="replace"></div>
+				</div>
+				<div class="bigRed center">
+					<div class="con" style=" text-align: center; ">
+						<img src="images/hongbao.png" alt="">
+						<img src="images/icon.png" alt="" class="icon">
+						<div class="redpacget"><p>收下TA</p> </div>
+					</div>
+				</div>
+				<div class="action center ">
+					<p class="clearfix"> <span class="again fl"></span><span class="share_btn fr"></span></p>
+					<p class="rule"></p>
+				</div>
+			</section>
+			<canvas id="img_canvas" width="200" height="200"></canvas>
+			<!-- s2部分 -->
+			<div class="rule_box">
+				<span class="close_btn"></span>
+				<!-- <img src="images//rule_album.png"  alt=""> -->
+				<div class="content" style="position:absolute;">
+					<img src="images//rule.png" class="" style="position:absolute;left: 0;" alt="">
+				</div>
+			</div>
+			<section class="screen cover" id="share">
+				<canvas id="share_canavs" width="640" height="1040"></canvas>
+				<!-- <img src="images/share.gif" alt=""> -->
+			</section>
+		</div>
+		<script type="text/javascript" src="js/fabric.min.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+		<script type="text/javascript" src="js/app.js?v=2"></script>
+</html>
